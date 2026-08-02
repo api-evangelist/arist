@@ -1,0 +1,54 @@
+generated: '2026-08-02'
+method: searched
+source: https://help.arist.co/article/1088-monthly-product-newsletters
+docs: https://help.arist.co/article/1088-monthly-product-newsletters
+scheme: monthly-product-updates
+format: help-center articles, one per month, no version numbers
+current_version: null
+note: |
+  Arist publishes product release notes as dated monthly "Product Updates" articles in its
+  help center rather than a versioned API changelog. Entries are product/feature level; no
+  semantic version, no API version, no breaking-change register. Recent window only — the
+  live help center is the source of truth.
+entries:
+- date: '2026-06'
+  title: June 2026 Product Updates
+  url: https://help.arist.co/article/1132-june-2026-product-updates
+  breaking: []
+  additions:
+  - Team Spaces — larger customers can split one account into separate teams and switch
+      between them from the sidebar
+  - Direct Word and PDF export of course materials from the platform, without waiting for
+      email delivery
+  - Translation instructions now extend translation dictionaries to image content as well
+      as text
+  - Separate Messenger settings — Teams and Arist Messenger configurations are now
+      independent
+  - Team-scoped delivery schedules, team-level content review queue and team-level delivery
+      management
+  - Cross-team folder movement relocates associated delivery schedules automatically
+  changes:
+  - STOP command refinement — STOP now applies only to SMS, WhatsApp and email, and no
+      longer affects Teams, Slack or Messenger enrollments
+  - Delivery methods management redesign — name, description, icon and toggle in one view
+- date: '2026-05'
+  title: May 2026 Product Updates
+  url: https://help.arist.co/article/1128-may-2026-updates
+  breaking: []
+  additions:
+  - Teams — different groups get autonomy within the same Arist environment; managers see
+      only their direct reports
+  - Arist Web App — browser-based training access, including credential sign-in for
+      employees with no phone number or email on record
+  changes:
+  - Learner view redesign
+  - Collapsible side menu
+  - Breadcrumb navigation moved to the top bar across more pages
+  - Interface polish and updated branding
+  - Session termination across all instances and instant org-switching context clearing
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+  - {url: 'https://help.arist.co/article/1132-june-2026-product-updates', http_status: 200}
+  - {url: 'https://help.arist.co/article/1128-may-2026-updates', http_status: 200}
+  - {url: 'https://help.arist.co/article/1088-monthly-product-newsletters', http_status: 200}

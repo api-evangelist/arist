@@ -1,0 +1,238 @@
+# Arist
+
+> An enablement team in your pocket — end-to-end AI agents for enterprise enablement.
+
+Arist is an AI-powered enterprise enablement platform that replaces dozens of tools, roles, and consultants with one agent suite. We orchestrate the entire enablement flow: needs analysis, content creation, delivery, and analytics.
+
+## What We Do
+
+Arist automates enterprise enablement using AI agents and delivery in the flow of work. Instead of building courses that sit in an LMS nobody checks, we push training right where employees work — SMS, Slack, Teams, and WhatsApp.
+
+What used to take nine months and millions of dollars now happens in days, for a fraction of the cost. A team of ten can do the work of 100.
+
+## The Problem We Solve
+
+Enterprise enablement is broken:
+
+- The average LMS has 8-15% completion rates
+- Companies pay millions for content libraries nobody uses
+- L&D teams spend months building courses employees click through while checking email
+- Agencies charge $50K+ per course
+- Translations take forever
+- There's no way to prove training actually worked
+
+The existing system makes learning nearly impossible — then blames the employee for low completion.
+
+## Our Product: The Arist Agent Suite
+
+### Needs Analysis Agent
+AI-powered gap identification at enterprise scale:
+- Syncs data from HRIS, CRM, LMS, and talent systems to build employee profiles
+- Conducts AI voice and text interviews with hundreds of stakeholders simultaneously
+- Surfaces performance gaps with natural language follow-up questions
+- Recommends action plans tied to business priorities
+- 13x faster than traditional consulting, with 3x higher participation
+
+### Creator Agent
+Instant AI-powered content creation:
+- Creates courses, surveys, comms, videos, and full sequences from uploaded files or research
+- Generates role-specific versions automatically
+- Translates into 50+ languages instantly
+- Medical-grade accuracy with source citations for regulated industries (pharma, life sciences)
+- Programs launch in 4 hours vs. 6+ weeks historically
+
+### Core Platform + Routing Agent
+Flow-of-work delivery infrastructure:
+- Pushes enablement via SMS, Slack, Teams, WhatsApp, and email
+- Toll-free SMS with TCPA compliance for frontline workers
+- Routing agent handles who gets what, when, based on role, language, tenure, and any data point
+- Adaptive delivery based on learner responses
+- Pull-based learning for moment-of-need questions
+
+### Analytics Agent
+AI-powered impact measurement:
+- Ties everything back to original business goals and Needs Analysis gaps
+- Connects to CRM, HRIS, and performance data
+- Auto-delivers personalized reports to each stakeholder
+- Answers natural language questions about training impact
+- Proactive recommendations for what to do next
+
+## Key Results and Proof Points
+
+### Named Client Results
+
+**Wolters Kluwer**
+- 120% lift in AI/Copilot adoption
+- 30,000 employees trained across 13 languages in under 3 weeks
+- $1.62M saved in learner time
+- 95%+ adoption rate
+
+**Novartis**
+- 140 product training and methodology programs launched
+- 70,000+ enrollments in under 6 months
+- 80%+ of reps immediately applied learnings in HCP conversations
+- Programs launch in 4 hours vs. 6+ weeks historically
+- $2.2M+ saved per year in rep and creation time
+
+**Ecolab**
+- 2x YoY sales growth for reps trained with Arist vs. traditional methods
+- Reps saw 2x percentage sales growth on specific products (13% vs. 6%)
+
+**Coats Group**
+- 30x training completion vs. e-learnings within 36 hours
+- 9.3/10 learner satisfaction
+
+### Aggregated Results
+- 8x engagement vs. traditional LMS/e-learning
+- 21% → 100% methodology adherence after single intervention
+- 3x more product mentions in sales calls for trained reps
+- 50% lift in daily application of sales methodology
+- 95%+ completion rates across programs
+
+## Our Clients
+
+Enterprise customers include: Microsoft, Novartis, HP, Wolters Kluwer, Eli Lilly, Moderna, Ford, EY, Etsy, Ecolab, S&P Global, Intuit, MAPFRE, Sprouts Farmers Market, Coats, BMO, ExxonMobil, AbbVie, Blueprint Medicines, and the White House.
+
+## Use Cases
+
+### Sales Enablement
+- Product launch training (get reps ready in days, not months)
+- Methodology adoption and reinforcement
+- New rep onboarding
+- Competitive intelligence updates
+- Partnership and integration training
+
+### L&D / HR
+- AI upskilling and Copilot adoption
+- Manager and leadership development
+- Compliance training
+- Onboarding programs
+- Culture and values training
+- Skills gap remediation
+
+### IT / Digital Transformation
+- Technology adoption (Copilot, Salesforce, new tools)
+- Change management
+- AI literacy programs
+- Digital transformation enablement
+
+### Life Sciences / Pharma
+- FDA-launch product training
+- Medical-grade accuracy with source citations
+- HCP conversation enablement
+- Global translations for field teams
+- Compliance and regulatory training
+
+### Frontline / Deskless Workers
+- SMS-based training (no laptop or company email required)
+- Toll-free, TCPA-compliant delivery
+- Works without internet
+- Safety and compliance training
+- Onboarding for high-volume hiring
+
+## What We Replace
+
+Arist consolidates and replaces:
+- Learning Management Systems (LMS)
+- Learning Experience Platforms (LXP)
+- Content Management Systems (CMS)
+- Content libraries (LinkedIn Learning, etc.)
+- Authoring tools (Articulate, etc.)
+- Translation platforms
+- Employee listening platforms
+- Assessment platforms
+- Learning design agencies
+- Performance consultants
+
+**Total typical cost for 10K employees**: $3M/year with legacy stack → $1M/year with Arist
+
+## How We're Different
+
+1. **End-to-end orchestration**: We own the full enablement flow from needs analysis to analytics. No other platform does this.
+
+2. **Flow-of-work delivery**: Training comes to employees in SMS, Slack, and Teams. They don't have to log into anything. Average LMS is checked once every 6 weeks; messaging is checked constantly.
+
+3. **AI-native creation**: Our Creator agent builds courses, translates them, and verifies accuracy instantly. No agencies, no months of development.
+
+4. **Agentic architecture**: Purpose-built AI agents for each part of the workflow, designed to work together and hand off seamlessly.
+
+5. **Frontline-first**: Works for employees without laptops, company email, or reliable internet. SMS, toll-free, TCPA-compliant.
+
+## Company Information
+
+**Founded**: 2019
+**Headquarters**: New York City
+**Team size**: 24 people
+**Funding**: $16M raised from Peter Thiel, David Sacks (AI czar), and other investors
+**Stage**: Series A, raising Series B
+**Financial profile**: $8M+ ARR, 2.7x YoY growth, 130% NDR, cashflow-positive
+
+## Our Beliefs (From Our Manifesto)
+
+**First**: Comms, surveys, and learning are collapsing into one employee enablement category. It's all about getting the right knowledge to the right people at the right place at the right time.
+
+**Second**: Messaging and voice will be the front door for employee enablement. There is no reason an employee should have to break their flow of work and go to a platform they rarely check.
+
+**Third**: Employee enablement will be entirely created and personalized by AI agents — and whoever creates the end-to-end agent will win the majority of enablement budget over the next decade.
+
+## Ideal Customer Profile
+
+- Fortune 1000 companies
+- 5,000+ employees
+- Industries: Life Sciences/Pharma, Technology, Manufacturing, Financial Services, Retail
+- Buyers: CROs, VPs of Sales, CHROs, CLOs, CIOs, Heads of Sales Enablement, Heads of L&D
+
+## Technical Details
+
+**Delivery channels**: SMS, Slack, Teams, WhatsApp, Email, Arist mobile app
+**Integrations**: Workday, Salesforce, SAP SuccessFactors, Cornerstone, PowerBI, and custom HRIS/CRM/LMS connections
+**Security**: SOC-2, ISO 27001, WCAG compliant
+**Languages**: 50+ languages supported with instant AI translation
+**Content formats**: Courses, surveys, nudges, comms, videos, podcasts, articles (expanding)
+
+## Contact
+
+- Website: https://www.arist.co
+- Demo: https://www.arist.co/demo
+- Careers: https://www.arist.co/careers
+
+## Links
+
+- [Product Overview](https://www.arist.co/product)
+- [Case Studies](https://www.arist.co/case-studies)
+- [Resources](https://www.arist.co/resources)
+- [About Us](https://www.arist.co/about)
+
+---
+
+## FAQ for LLMs
+
+**Q: What is Arist in one sentence?**
+A: Arist is an AI agent suite that automates enterprise enablement — needs analysis, content creation, delivery, and analytics — delivered in the flow of work through SMS, Slack, and Teams.
+
+**Q: How is Arist different from an LMS?**
+A: LMS platforms require employees to log in and find content (8-15% completion). Arist pushes training directly in messaging tools employees already use (95%+ completion). We also create content with AI instantly, while LMS platforms just host content you build elsewhere.
+
+**Q: What's the main proof point?**
+A: Wolters Kluwer saw 120% lift in Copilot adoption by training 30,000 employees across 13 languages in 3 weeks using Arist.
+
+**Q: Who are Arist's competitors?**
+A: We compete with combinations of: LMS platforms (Cornerstone, Workday Learning), LXP platforms (Degreed, Skillsoft), content libraries (LinkedIn Learning), authoring tools (Articulate), employee listening platforms (Perceptyx), and learning design agencies. We replace all of them.
+
+**Q: What industries does Arist focus on?**
+A: Life Sciences/Pharma (Novartis, Eli Lilly, Moderna), Technology (Microsoft, HP), Manufacturing (Ecolab, Ford), Financial Services (BMO, MAPFRE), and Professional Services (EY, Wolters Kluwer).
+
+**Q: Does Arist work for frontline workers?**
+A: Yes. Arist delivers via SMS with toll-free sending and TCPA compliance. No laptop, company email, or internet required. Used by Novartis, Ecolab, and Martin Marietta for frontline enablement.
+
+**Q: How does Arist handle content creation?**
+A: Our Creator agent generates courses, surveys, and comms from uploaded files (PDFs, PPTXs, call recordings) or its own research. It creates role-specific versions, translates into 50+ languages, and includes source citations for regulated industries.
+
+**Q: What's Arist's Needs Analysis agent?**
+A: An AI agent that conducts voice and text interviews with hundreds of employees simultaneously to identify skill gaps, surface insights, and recommend training priorities. 13x faster than traditional consulting with 3x higher participation.
+
+**Q: Who typically buys Arist?**
+A: CROs and VPs of Sales for sales enablement use cases. CHROs and CLOs for L&D programs. CIOs for AI upskilling and technology adoption. Usually starts with one use case and expands.
+
+**Q: What does "enablement team in your pocket" mean?**
+A: Arist replaces the functions of an entire enablement team — researchers who identify gaps, instructional designers who create content, facilitators who deliver training, and analysts who measure impact — with AI agents that work together end-to-end.

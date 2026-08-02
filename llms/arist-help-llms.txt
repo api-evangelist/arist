@@ -1,0 +1,97 @@
+# Arist Help Center
+
+## Articles
+
+Getting Started with Arist
+- Onboarding for New Arist Customers
+- [Arist Definitions/Acronyms Table](http://help.arist.co/article/1010-arist-definitions-acronyms-table.md)
+- [What is Arist?](http://help.arist.co/article/1014-what-is-arist.md)
+- [Arist New User Onboarding](http://help.arist.co/article/1117-new-user-onboarding.md)
+
+Arist Platform Management
+- How to Use the Arist Platform (Content, Delivery, Analytics, etc.)
+- [Using Arist Creator](http://help.arist.co/article/1020-using-arist-creator.md)
+- [Effective Prompting for Creator](http://help.arist.co/article/1021-effective-prompting-for-creator.md)
+- [Formatting in Arist Courses](http://help.arist.co/article/1024-formatting-in-arist-courses.md)
+- [A Guide to Building Transformative Courses with Arist](http://help.arist.co/article/1025-a-guide-to-building-transformative-courses-with-arist.md)
+- [Using Templates from Arist's Content Library](http://help.arist.co/article/1026-using-templates-from-arists-content-library.md)
+- [Learners](http://help.arist.co/article/1041-learners.md)
+- [Admin Settings Overview](http://help.arist.co/article/1042-admin-settings-and-organization-management.md)
+- [My Login Code Isn't Working](http://help.arist.co/article/1043-troubleshooting-a-link-is-expired-error-message.md)
+- [Settings: Users & Roles](http://help.arist.co/article/1046-settings-members.md)
+- [WhatsApp Course Requirements](http://help.arist.co/article/1047-whatsapp-course-requirements.md)
+- [Using the "Preview" feature to Test your Courses](http://help.arist.co/article/1048-using-the-preview-feature-to-test-your-courses.md)
+- [Delivery](http://help.arist.co/article/1049-schedules.md)
+- [Enrollment Status](http://help.arist.co/article/1050-enrollment-status.md)
+- ["Content" Page](http://help.arist.co/article/1053-courses-page.md)
+- [Delivery: Calendar View](http://help.arist.co/article/1054-schedules-calendar-view.md)
+- [Settings: Response Reminders](http://help.arist.co/article/1055-settings-response-reminders.md)
+- [Settings: Tags](http://help.arist.co/article/1056-settings-tags.md)
+- [SMS Delivery and Sender IDs](http://help.arist.co/article/1057-sms-delivery-and-sender-ids.md)
+- [Cohorts](http://help.arist.co/article/1058-cohorts.md)
+- [Automations](http://help.arist.co/article/1059-automations.md)
+- ["Analytics" Page](http://help.arist.co/article/1060-analytics-page.md)
+- [Analytics Exports](http://help.arist.co/article/1061-exports.md)
+- [Settings: Channels](http://help.arist.co/article/1062-settings-channels.md)
+- [Uploading and Sending Video Content](http://help.arist.co/article/1069-uploading-and-sending-video-content.md)
+- [Using Leaderboards to Gamify Learning](http://help.arist.co/article/1070-using-leaderboards-to-gamify-learning.md)
+- [Uploading a Cohort via CSV](http://help.arist.co/article/1072-uploading-a-cohort-via-csv.md)
+- [Dynamic Cohorts](http://help.arist.co/article/1083-dynamic-cohorts.md)
+- [Medical Writer (Citations) with Arist Creator](http://help.arist.co/article/1103-medical-writer-citations-with-arist-creator.md)
+- [AI Assessment for Open-Ended Questions](http://help.arist.co/article/1105-ai-assessment-for-open-ended-questions.md)
+- [Settings: System Messages](http://help.arist.co/article/1106-settings-system-messages.md)
+- [Settings: Custom Prompts](http://help.arist.co/article/1108-settings-custom-prompts.md)
+- [Surveys](http://help.arist.co/article/1116-surveys.md)
+- [Arist Teams: Controlling Learner Access by User (Beta)](http://help.arist.co/article/1119-arist-teams-controlling-learner-access-by-user-beta.md)
+- [Shortening Links in the Content Editor](http://help.arist.co/article/1120-shortening-links-in-the-content-editor.md)
+- [Languages Available in Arist](http://help.arist.co/article/1133-languages-available-in-arist.md)
+
+Data Integrations and Delivery Methods
+- Supported Arist Integrations and How to Set Them Up
+- [Arist Integration Guide: Slack](http://help.arist.co/article/1012-connecting-arist-to-slack.md)
+- [Arist Integrations Overview](http://help.arist.co/article/1017-integration-overview-connecting-arist-with-your-environment.md)
+- [Arist Integration Guide: SSO (Single Sign-On)](http://help.arist.co/article/1027-arist-application-sso-single-sign-on-integration-guide.md)
+- [How Arist Builds Data Integrations](http://help.arist.co/article/1071-how-arist-builds-data-integrations.md)
+- [How is Arist for Teams Changing From Arist (Legacy)?](http://help.arist.co/article/1085-how-is-arist-for-teams-changing-from-arist-legacy.md)
+- [Prepare Teams white-label customizations with official Microsoft specifications](http://help.arist.co/article/1091-how-to-prepare-teams-white-label-customizations-with-official-microsoft-specifications.md)
+- [Arist Integration Guide: Microsoft Teams](http://help.arist.co/article/1092-arist-teams-step-by-step-guide.md)
+- [Link your Teams Tenant to Arist](http://help.arist.co/article/1093-how-to-link-your-teams-tenant-to-arist.md)
+- [Create and manage an appropriate Microsoft group for Teams app](http://help.arist.co/article/1094-how-to-create-or-identify-an-appropriate-microsoft-group-for-teams-app.md)
+- [White-label the Arist App in Teams](http://help.arist.co/article/1095-how-to-use-teams-app-white-label-customizations.md)
+- [Enable Arist app in Teams](http://help.arist.co/article/1096-how-to-enable-arist-app-in-teams-does-not-pre-install-for-end-users.md)
+- [Pre-install Teams app for users](http://help.arist.co/article/1097-how-to-pre-install-teams-app-for-users-optionally-pinned.md)
+- [Validate Teams App Settings were Correctly Configured](http://help.arist.co/article/1099-how-to-validate-teams-app-settings-were-correctly-configured.md)
+- [Sync Teams users](http://help.arist.co/article/1100-how-to-sync-teams-users-through-arist-web-ui.md)
+- [Transitioning from Arist (Legacy) to Current Arist Teams App](http://help.arist.co/article/1101-transitioning-from-arist-legacy-to-current-arist-teams-app.md)
+- [Arist For Slack Overview](http://help.arist.co/article/1109-arist-for-slack-overview.md)
+- [Grant Admin Consent for Arist in Teams](http://help.arist.co/article/1112-how-to-grant-admin-consent-for-arist-teams.md)
+- [Installing the Arist Comms app for existing Arist customers](http://help.arist.co/article/1114-arist-comms-installing-the-arist-comms-app-for-existing-arist-customers.md)
+- [Disabling the Arist (Legacy) App](http://help.arist.co/article/1115-disabling-the-arist-legacy-app.md)
+- [Arist Messenger App Overview](http://help.arist.co/article/1134-arist-messenger-overview.md)
+
+Support for Learners & Interviewees
+- Troubleshooting common problems and helping learners & interviewees use Arist
+- [How to Manually Install Arist on Microsoft Teams as a Learner](http://help.arist.co/article/1029-how-to-manually-install-arist-on-microsoft-teams-as-a-learner.md)
+- [Troubleshooting: Microsoft Teams Errors](http://help.arist.co/article/1030-microsoft-teams-errors.md)
+- [Troubleshooting: Learner FAQs](http://help.arist.co/article/1032-learner-faq.md)
+- [How to Self-Enroll in Arist Courses](http://help.arist.co/article/1073-how-to-self-enroll-in-arist-courses.md)
+- [Arist Learner Experience: Microsoft Teams](http://help.arist.co/article/1104-arist-learner-experience-microsoft-teams.md)
+- [Arist Learner Experience: Mobile App](http://help.arist.co/article/1123-arist-learner-experience-mobile-app.md)
+- [Arist Learner Experience: Slack](http://help.arist.co/article/1124-arist-learner-experience-slack.md)
+- [Arist Interview Experience](http://help.arist.co/article/1126-your-arist-interview-experience.md)
+- [Arist Learner Experience: Web App](http://help.arist.co/article/1129-arist-learner-experience-web-app.md)
+
+Support for Users & Administrators
+- Troubleshooting common problems and supporting Learners & Interviewees
+- [How to Whitelist Email Domains](http://help.arist.co/article/1063-whitelisting-email-domains.md)
+- [System Keywords](http://help.arist.co/article/1064-system-keywords.md)
+- [Page Errors](http://help.arist.co/article/1065-page-errors.md)
+- [Message Delays in Deliverability](http://help.arist.co/article/1066-message-delays-in-deliverability.md)
+- [Logging Into Arist](http://help.arist.co/article/1067-password-reset-instructions.md)
+- [Troubleshooting: Content Not Saving](http://help.arist.co/article/1131-troubleshooting-content-not-saving.md)
+
+Monthly Product Updates
+- Product Newsletters and Release Notes
+- [Monthly Product Newsletters](http://help.arist.co/article/1088-monthly-product-newsletters.md)
+- [May 2026 Product Updates](http://help.arist.co/article/1128-may-2026-updates.md)
+- [June 2026 Product Updates](http://help.arist.co/article/1132-june-2026-product-updates.md)

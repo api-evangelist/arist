@@ -1,0 +1,85 @@
+generated: '2026-08-02'
+method: searched
+probe: true
+url: https://trust.arist.co/
+platform: Secureframe Trust Center
+summary: |
+  Arist runs a public Secureframe-hosted trust center at trust.arist.co listing four
+  certifications and a continuously monitored control set across ten domains. Evidence
+  documents (ISO certificates, SOC 2 Type II report and bridge letter, penetration test
+  results, security whitepaper) are request-gated rather than downloadable.
+certifications:
+- name: ISO 27001
+  description: International standard for an information security management system (ISMS)
+- name: ISO 27701
+  description: International standard for a privacy information management system (PIMS)
+- name: ISO 42001
+  description: International standard for an AI management system (AIMS)
+- name: SOC 2 Type 2
+  description: Service Organization Controls (SOC 2) Type II Trust Services Principles
+monitoring:
+  provider: Secureframe
+  domains:
+  - Access Security
+  - Availability
+  - Change Management
+  - Communications
+  - Confidentiality
+  - Incident Response
+  - Network Security
+  - Organizational Management
+  - Risk Assessment
+  - Vulnerability Management
+  named_controls:
+  - Encryption-at-Rest
+  - Encryption-in-Transit
+  - User Access Reviews
+  - Least Privilege in Use
+  - Administrative Access is Restricted
+  - Business Continuity and Disaster Recovery Policy
+  - Automated Backup Process
+  - Secure Development Policy
+  - Incident Response Plan
+  - Incident Response Plan Testing
+  - Network Traffic Monitoring
+  - Automated Alerting for Security Events
+  - Restricted Port Configurations
+  - Data Retention and Disposal Policy
+  - Vulnerability Scanning
+  - Third-Party Penetration Test
+  - Vulnerability and Patch Management Policy
+  - Confidential Reporting Channel
+penetration_testing:
+  cadence: at least annually
+  scope: network and application penetration test of the production environment
+  performed_by: third party
+  results: available on request
+documents:
+  access: request-gated
+  available:
+  - Arist Security & Compliance program whitepaper
+  - ISO certificates
+  - SOC 2 Type II report
+  - SOC 2 Type II bridge letter
+  - Penetration test results
+sub_processors: https://arist.com/legal/sub-processors
+vulnerability_disclosure:
+  public_policy: false
+  security_txt: false
+  bug_bounty: false
+  note: |
+    No public vulnerability disclosure policy, security.txt or bug-bounty program was
+    found on any Arist host. The trust center lists an internal "Confidential Reporting
+    Channel" control but publishes no external reporting address, so no Security /
+    VulnerabilityDisclosure pointer is claimed for this provider.
+evidence:
+- source: https://trust.arist.co/
+  http_status: 200
+  keywords: [iso 27001, iso 27701, iso 42001, soc 2 type 2, trust center, secureframe, penetration test]
+- source: https://arist.com/legal/sub-processors
+  http_status: 200
+x-evidence:
+  fetched: '2026-08-02'
+  url: https://trust.arist.co/
+  http_status: 200
+  content_type: text/html

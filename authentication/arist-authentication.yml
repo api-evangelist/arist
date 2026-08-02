@@ -1,0 +1,116 @@
+generated: '2026-08-02'
+method: searched
+source: https://auth.arist.app/.well-known/openid-configuration
+docs: https://help.arist.co/article/1027-arist-application-sso-single-sign-on-integration-guide
+summary:
+  types:
+  - openIdConnect
+  - oauth2
+  - saml
+  api_key_in: []
+  oauth2_flows:
+  - authorizationCode
+  - clientCredentials
+  - refreshToken
+  - deviceCode
+  - tokenExchange
+  - implicit
+  - password
+  note: |
+    Arist publishes no OpenAPI, so no securitySchemes could be derived mechanically.
+    This profile is searched: it is built from the anonymously published OIDC discovery
+    document on Arist's own Auth0 tenant plus the help-center SSO integration guide.
+    The platform API host (api.arist.app) is an Amazon API Gateway deployment that
+    answers every anonymous request with 403 MissingAuthenticationToken; the credential
+    type it expects is not publicly documented. Customer system integrations are brokered
+    by Workato, which stores the Arist API credentials on the customer's behalf.
+schemes:
+- name: AristOIDC
+  type: openIdConnect
+  openIdConnectUrl: https://auth.arist.app/.well-known/openid-configuration
+  issuer: https://auth.arist.app/
+  provider: Auth0
+  endpoints:
+    authorization: https://auth.arist.app/authorize
+    token: https://auth.arist.app/oauth/token
+    userinfo: https://auth.arist.app/userinfo
+    jwks: https://auth.arist.app/.well-known/jwks.json
+    revocation: https://auth.arist.app/oauth/revoke
+    registration: https://auth.arist.app/oidc/register
+    device_authorization: https://auth.arist.app/oauth/device/code
+    backchannel_authentication: https://auth.arist.app/bc-authorize
+    mfa_challenge: https://auth.arist.app/mfa/challenge
+  grant_types:
+  - authorization_code
+  - client_credentials
+  - refresh_token
+  - implicit
+  - password
+  - urn:ietf:params:oauth:grant-type:device_code
+  - urn:ietf:params:oauth:grant-type:token-exchange
+  - urn:ietf:params:oauth:grant-type:jwt-bearer
+  - http://auth0.com/oauth/grant-type/password-realm
+  - http://auth0.com/oauth/grant-type/passwordless/otp
+  - http://auth0.com/oauth/grant-type/mfa-oob
+  - http://auth0.com/oauth/grant-type/mfa-otp
+  - http://auth0.com/oauth/grant-type/mfa-recovery-code
+  response_types:
+  - code
+  - token
+  - id_token
+  - code token
+  - code id_token
+  - token id_token
+  - code token id_token
+  pkce:
+    supported: true
+    methods: [S256, plain]
+  token_endpoint_auth_methods:
+  - client_secret_basic
+  - client_secret_post
+  - private_key_jwt
+  - none
+  id_token_signing_algs: [HS256, RS256, PS256]
+  dpop:
+    supported: true
+    signing_algs: [ES256]
+  dynamic_client_registration: true
+  backchannel_logout: true
+  sources: [well-known/arist-openid-configuration.json]
+- name: AristEnterpriseSSO
+  type: saml
+  description: |
+    Enterprise customers federate into the Arist Auth0 tenant. SAML supports both
+    SP-initiated and IdP-initiated login; OIDC federation is SP-initiated only.
+  protocols: [SAML 2.0, OpenID Connect]
+  identity_providers:
+  - Microsoft Entra ID (Azure AD)
+  - Okta
+  - Google Workspace
+  - Active Directory / LDAP
+  - ADFS
+  - PingFederate
+  idp_initiated: saml-only
+  sources: [https://help.arist.co/article/1027-arist-application-sso-single-sign-on-integration-guide]
+- name: AristEmailPasscode
+  type: passwordless
+  description: |
+    Organizations without SSO sign in with a one-time passcode delivered to their work
+    email. When SSO is enabled for an organization the SSO flow always takes precedence
+    and the passcode option is unavailable.
+  sources: [https://help.arist.co/article/1027-arist-application-sso-single-sign-on-integration-guide]
+gated_surfaces:
+- host: https://api.arist.app
+  observed: 403 MissingAuthenticationToken (Amazon API Gateway)
+  credential_type: not publicly documented
+  brokered_by: Workato
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+  - url: https://auth.arist.app/.well-known/openid-configuration
+    http_status: 200
+    content_type: application/json
+  - url: https://help.arist.co/article/1027-arist-application-sso-single-sign-on-integration-guide
+    http_status: 200
+  - url: https://api.arist.app/
+    http_status: 403

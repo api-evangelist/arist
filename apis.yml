@@ -1,18 +1,87 @@
 aid: arist
 name: Arist
-description: 'Arist is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Arist is an AI-native enterprise enablement platform, founded in 2019
+  and headquartered in New York City, that delivers training, communications, nudges
+  and surveys in the flow of work over SMS, WhatsApp, Slack, Microsoft Teams, email
+  and its own web and mobile apps rather than through a traditional LMS portal. The
+  product is packaged as an agent suite — a Needs Analysis agent that interviews employees
+  and syncs HRIS/CRM/LMS data, a Creator agent that generates and translates courses
+  into 50+ languages, a Core Platform and Routing agent that decides who receives what
+  and where, and an Analytics agent that ties delivery back to business goals. Customer
+  systems (Workday, Salesforce, SAP SuccessFactors, Cornerstone, ServiceNow, Oracle)
+  are connected through Workato-hosted connectors rather than a publicly documented
+  REST API; the platform API host at api.arist.app is credential-gated and no public
+  OpenAPI, SDK or developer portal is published. Identity is handled by an Auth0 tenant
+  at auth.arist.app supporting SAML and OIDC single sign-on plus one-time email passcodes.'
 url: https://raw.githubusercontent.com/api-evangelist/arist/refs/heads/main/apis.yml
+image: https://framerusercontent.com/images/MVcgY55O8cBGMijaJPKzShyOgk.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
-apis: []
+- Learning
+- Training
+- Enablement
+- Microlearning
+- Human Resources
+- Messaging
+- Artificial Intelligence
+- Employee Communications
+- SaaS
+apis:
+- aid: arist:identity
+  name: Arist Identity (OIDC)
+  description: 'Arist runs its customer-facing authentication on an Auth0 tenant at
+    auth.arist.app. The tenant publishes an RFC 8414 / OpenID Connect Discovery document
+    anonymously, describing the authorization, token, device-authorization, userinfo,
+    revocation, dynamic-registration and backchannel-authentication endpoints, the
+    supported grant types (authorization_code, client_credentials, refresh_token,
+    device_code, password, implicit), PKCE methods and DPoP algorithms, plus the standard
+    OIDC scope set. This is the only machine-readable contract Arist publishes without
+    credentials. Enterprise customers federate into it with SAML or OIDC from Entra
+    ID, Okta, Google Workspace, ADFS or PingFederate; organizations without SSO sign
+    in with a one-time passcode delivered by email.'
+  humanURL: https://help.arist.co/article/1027-arist-application-sso-single-sign-on-integration-guide
+  baseURL: https://auth.arist.app
+  tags:
+  - Authentication
+  - OpenID Connect
+  - OAuth
+  - Single Sign On
+  properties:
+  - type: WellKnown
+    url: well-known/arist-well-known.yml
+  - type: OpenIDConnect
+    url: well-known/arist-openid-configuration.json
+  - type: Authentication
+    url: authentication/arist-authentication.yml
+  - type: OAuthScopes
+    url: scopes/arist-scopes.yml
+- aid: arist:platform
+  name: Arist Platform API
+  description: 'The Arist platform API host at api.arist.app fronts an Amazon API Gateway
+    deployment and answers every anonymous request with a 403 MissingAuthenticationToken,
+    so the surface is real but entirely credential-gated. Arist does not publish an
+    OpenAPI definition, a developer portal, SDKs or a CLI; customer integrations with
+    HRIS, CRM, ATS and LMS systems are built by Arist through Workato, which stores
+    the Arist API credentials and connection details on the customer''s behalf. Contract
+    discovery probed /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json,
+    /api-docs, /docs, /redoc and /graphql on this host — all returned the same gated
+    403 — so no machine-readable contract could be harvested.'
+  humanURL: https://help.arist.co/category/107-data-integrations-and-delivery-methods
+  baseURL: https://api.arist.app
+  tags:
+  - Learning
+  - Enablement
+  - Integrations
+  properties:
+  - type: Documentation
+    url: https://help.arist.co/category/107-data-integrations-and-delivery-methods
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -20,4 +89,55 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://arist.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/arist_stock/
+- type: Documentation
+  url: https://help.arist.co/
+- type: HelpCenter
+  url: https://help.arist.co/
+- type: Support
+  url: https://help.arist.co/contact
+- type: GettingStarted
+  url: https://help.arist.co/article/1117-new-user-onboarding
+- type: Blog
+  url: https://arist.com/resources/blogs
+- type: GitHubOrganization
+  url: https://github.com/aristco
+- type: Login
+  url: https://arist.app/login
+- type: TermsOfService
+  url: https://arist.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://arist.com/legal/privacy-policy
+- type: SubProcessors
+  url: https://arist.com/legal/sub-processors
+- type: Compliance
+  url: https://trust.arist.co/
+- type: StatusPage
+  url: https://status.arist.app/
+- type: LLMsTxt
+  url: llms/arist-llms.txt
+- type: WellKnown
+  url: well-known/arist-well-known.yml
+- type: Authentication
+  url: authentication/arist-authentication.yml
+- type: OAuthScopes
+  url: scopes/arist-scopes.yml
+- type: DomainSecurity
+  url: security/arist-domain-security.yml
+- type: TrustCenter
+  url: security/arist-trust-center.yml
+- type: Conformance
+  url: conformance/arist-conformance.yml
+- type: Lifecycle
+  url: lifecycle/arist-lifecycle.yml
+- type: ChangeLog
+  url: changelog/arist-changelog.yml
+- type: Conventions
+  url: conventions/arist-conventions.yml
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 14
+  pass: local-v1

@@ -1,0 +1,118 @@
+generated: '2026-08-02'
+method: searched
+source: live probes of every Arist host found in apis.yml and via certificate transparency
+summary: |
+  Arist publishes exactly one machine-readable discovery surface: the Auth0 tenant at
+  auth.arist.app, which serves an OpenID Connect Discovery / RFC 8414 authorization-server
+  metadata document (the two paths return byte-identical bodies) plus a JWKS. No
+  security.txt, api-catalog, ai-plugin.json or agent card is published on any host.
+  IMPORTANT false-positive note: arist.app and status.arist.app are single-page apps whose
+  catch-all route answers HTTP 200 with an HTML shell for EVERY /.well-known/* path. Those
+  200s were verified to be HTML, not JSON, and are recorded below as spa-catchall, not hits.
+hosts:
+- host: https://auth.arist.app
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    content_type: application/json
+    file: arist-openid-configuration.json
+    spec: OpenID Connect Discovery 1.0
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    content_type: application/json
+    file: arist-oauth-authorization-server.json
+    spec: RFC 8414
+    note: byte-identical to the openid-configuration document
+  - path: /.well-known/jwks.json
+    status: 200
+    content_type: application/json
+    file: arist-jwks.json
+    spec: RFC 7517
+- host: https://arist.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 200
+    content_type: text/plain
+    file: ../llms/arist-llms.txt
+  - path: /robots.txt
+    status: 200
+  - path: /sitemap.xml
+    status: 200
+- host: https://help.arist.co
+  documents:
+  - path: /llms.txt
+    status: 200
+    content_type: text/plain
+    file: ../llms/arist-help-llms.txt
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://api.arist.app
+  note: Amazon API Gateway; every anonymous path returns 403 MissingAuthenticationToken
+  documents:
+  - path: /.well-known/openapi.json
+    status: 403
+  - path: /.well-known/security.txt
+    status: 403
+- host: https://arist.app
+  note: single-page app; catch-all answers 200 with an HTML shell for every path probed
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/api-catalog
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/agent-card.json
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/agent.json
+    status: 200
+    result: spa-catchall
+- host: https://status.arist.app
+  note: Checkly-hosted status page; same SPA catch-all behaviour
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/agent-card.json
+    status: 200
+    result: spa-catchall
+  - path: /.well-known/agent.json
+    status: 200
+    result: spa-catchall
+- host: https://trust.arist.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+x-evidence:
+  fetched: '2026-08-02'
+  hosts_probed:
+  - arist.com
+  - arist.co
+  - help.arist.co
+  - trust.arist.co
+  - api.arist.app
+  - auth.arist.app
+  - arist.app
+  - www.arist.app
+  - status.arist.app
+  - install.arist.app
+  - messenger.arist.app
+  - teamsbot.arist.app
+  agent_card_found: false
+  security_txt_found: false
+  api_catalog_found: false

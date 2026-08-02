@@ -1,0 +1,58 @@
+generated: '2026-08-02'
+method: searched
+source: https://status.arist.app/ + https://help.arist.co/article/1088-monthly-product-newsletters
+versioning:
+  scheme: none-published
+  current: null
+  docs: null
+  note: |
+    Arist ships a continuously-updated SaaS product and publishes monthly product updates
+    rather than a versioned API. No API version scheme (URI path, header or date-pinned
+    train) is documented, and no OpenAPI is published from which a version could be read.
+    The only versioned surfaces observed are the Microsoft Teams and Slack apps, and the
+    "Arist (Legacy)" to "Arist for Teams" app migration documented in the help center.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  observed_deprecations:
+  - name: Arist (Legacy) Microsoft Teams app
+    replacement: Arist for Teams app
+    docs: https://help.arist.co/article/1101-transitioning-from-arist-legacy-to-current-arist-teams-app
+    disable_guide: https://help.arist.co/article/1115-disabling-the-arist-legacy-app
+    note: A concrete product deprecation with a documented migration path, but no general
+      deprecation policy or Sunset/Deprecation header contract is published.
+sla:
+  url: null
+  uptime_target: null
+  note: No public SLA or uptime commitment published; availability monitoring is listed as a
+    Secureframe-monitored control on the trust center.
+status_page:
+  url: https://status.arist.app/
+  platform: Checkly
+  subscribe: https://status.arist.app/subscribe
+  components:
+  - name: Content Admin
+    group: Content Authoring & Admin
+  - name: AI Creator
+    group: Content Authoring & Admin
+  - name: SMS Message Delivery
+    group: Delivery
+  - name: WhatsApp Message Delivery
+    group: Delivery
+  - name: Slack Message Delivery
+    group: Delivery
+  - name: Microsoft Teams Message Delivery
+    group: Delivery
+deprecated_operations: []
+support:
+  help_center: https://help.arist.co/
+  contact: https://help.arist.co/contact
+  email: support@arist.co
+  integrations_email: integrations-support@arist.co
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+  - {url: 'https://status.arist.app/', http_status: 200}
+  - {url: 'https://help.arist.co/article/1088-monthly-product-newsletters', http_status: 200}
+  - {url: 'https://help.arist.co/article/1101-transitioning-from-arist-legacy-to-current-arist-teams-app',
+    http_status: 200}

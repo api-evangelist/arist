@@ -1,0 +1,99 @@
+generated: '2026-08-02'
+method: searched
+source: https://help.arist.co/ + https://auth.arist.app/.well-known/openid-configuration
+note: |
+  Arist ships no public API contract, so most of the cross-cutting HTTP semantics this
+  artifact normally captures simply do not exist in public. Recorded here as absence
+  (documented: false) rather than invented. What Arist DOES publish conventions for is its
+  delivery surface — the messaging channels learners receive content on — and its identity
+  layer. Both are captured below.
+authentication:
+  style: openid-connect / saml federation
+  issuer: https://auth.arist.app/
+  bearer_tokens: JWT (RS256/PS256/HS256 id_token signing advertised)
+  pkce: required-capable (S256)
+  sender_constraining: DPoP (ES256) advertised
+  api_credentials: |
+    The platform API at api.arist.app expects a credential that Arist does not document
+    publicly; customer integrations are brokered by Workato, which stores the Arist API
+    credentials and connection details on the customer's behalf.
+  see_also: authentication/arist-authentication.yml
+idempotency:
+  documented: false
+  header: null
+  note: No idempotency key, retry contract or replay window is documented. No Idempotency
+    pointer is claimed for this provider.
+pagination:
+  documented: false
+  style: null
+  note: No public API reference, so no pagination contract is published.
+field_expansion:
+  documented: false
+sparse_fieldsets:
+  documented: false
+metadata:
+  documented: false
+request_tracing:
+  documented: false
+  note: api.arist.app is fronted by Amazon API Gateway, which returns x-amzn-RequestId and
+    x-amz-apigw-id response headers on the observed 403 responses; these are platform
+    defaults, not a documented Arist tracing contract.
+versioning:
+  documented: false
+  see_also: lifecycle/arist-lifecycle.yml
+error_envelope:
+  documented: false
+  observed: '{"message": "Missing Authentication Token"} — Amazon API Gateway default'
+  rfc9457: false
+rate_limiting:
+  documented: false
+  headers: []
+delivery_conventions:
+  description: |
+    Arist's real published convention surface is how content is delivered to learners and
+    how learners control it, not HTTP semantics.
+  channels: [SMS, WhatsApp, Slack, Microsoft Teams, Email, Arist Messenger, Arist Web App,
+    Arist mobile app]
+  system_keywords:
+    docs: https://help.arist.co/article/1064-system-keywords
+    stop:
+      applies_to: [SMS, WhatsApp, Email]
+      excludes: [Microsoft Teams, Slack, Arist Messenger]
+      changed: '2026-06'
+  sms:
+    docs: https://help.arist.co/article/1057-sms-delivery-and-sender-ids
+    sender_ids: documented
+    toll_free: true
+    tcpa_compliant: claimed
+  whatsapp:
+    docs: https://help.arist.co/article/1047-whatsapp-course-requirements
+    note: WhatsApp courses have template/content requirements documented separately
+  email:
+    whitelist: reply@mg.arist.co
+    docs: https://help.arist.co/article/1063-whitelisting-email-domains
+  languages:
+    count: 50+
+    docs: https://help.arist.co/article/1133-languages-available-in-arist
+integration_conventions:
+  broker: Workato
+  docs: https://help.arist.co/article/1071-how-arist-builds-data-integrations
+  overview: https://help.arist.co/article/1017-integration-overview-connecting-arist-with-your-environment
+  systems: [Workday, Salesforce, SAP SuccessFactors, Oracle, ServiceNow, Cornerstone, PowerBI]
+  oauth_note: Apps authorized through OAuth 2.0 require an additional step after the connector
+    is configured, for the customer's application administrators to manually authorize Arist
+    to access their data.
+  bulk_load: CSV cohort upload (https://help.arist.co/article/1072-uploading-a-cohort-via-csv)
+  support: integrations-support@arist.co
+cross_links:
+  authentication: authentication/arist-authentication.yml
+  scopes: scopes/arist-scopes.yml
+  lifecycle: lifecycle/arist-lifecycle.yml
+  changelog: changelog/arist-changelog.yml
+  conformance: conformance/arist-conformance.yml
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+  - {url: 'https://help.arist.co/article/1017-integration-overview-connecting-arist-with-your-environment',
+    http_status: 200}
+  - {url: 'https://help.arist.co/article/1071-how-arist-builds-data-integrations', http_status: 200}
+  - {url: 'https://api.arist.app/', http_status: 403}

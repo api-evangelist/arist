@@ -1,0 +1,84 @@
+generated: '2026-08-02'
+method: searched
+source: https://auth.arist.app/.well-known/openid-configuration
+note: |
+  Arist publishes no OpenAPI and no product-level permission/scope reference, so these are
+  the scopes advertised by its own OIDC authorization server (an Auth0 tenant on the
+  auth.arist.app hostname). They are the standard OIDC / Auth0 claim-release scope set —
+  identity scopes, not Arist product scopes. No documented scope governs access to the
+  gated platform API at api.arist.app.
+schemes:
+- name: AristOIDC
+  issuer: https://auth.arist.app/
+  source: well-known/arist-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://auth.arist.app/authorize
+    tokenUrl: https://auth.arist.app/oauth/token
+  - flow: clientCredentials
+    tokenUrl: https://auth.arist.app/oauth/token
+  - flow: deviceCode
+    deviceAuthorizationUrl: https://auth.arist.app/oauth/device/code
+    tokenUrl: https://auth.arist.app/oauth/token
+scopes:
+- scope: openid
+  description: Request an ID token — the base OpenID Connect scope.
+  flows: [authorizationCode, deviceCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: profile
+  description: Release the standard profile claims for the authenticated user.
+  flows: [authorizationCode, deviceCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: offline_access
+  description: Issue a refresh token so the client can renew access without user presence.
+  flows: [authorizationCode, deviceCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: name
+  description: Release the user's full name claim.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: given_name
+  description: Release the user's given name claim.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: family_name
+  description: Release the user's family name claim.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: nickname
+  description: Release the user's nickname claim.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: email
+  description: Release the user's email address claim.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: email_verified
+  description: Release whether the user's email address has been verified.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: picture
+  description: Release the user's profile picture URL.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: created_at
+  description: Release the timestamp the user record was created.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: identities
+  description: Release the linked identity-provider identities for the user.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: phone
+  description: Release the user's phone number claims.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+- scope: address
+  description: Release the user's address claim.
+  flows: [authorizationCode]
+  sources: [well-known/arist-openid-configuration.json]
+x-evidence:
+  fetched: '2026-08-02'
+  url: https://auth.arist.app/.well-known/openid-configuration
+  http_status: 200
+  scope_count: 14

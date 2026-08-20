@@ -32,6 +32,17 @@ tags:
 - Messaging
 - Artificial Intelligence
 - Employee Communications
+- Software-as-a-Service
+tags_raw:
+- Company
+- Learning
+- Training
+- Enablement
+- Microlearning
+- Human Resources
+- Messaging
+- Artificial Intelligence
+- Employee Communications
 - SaaS
 apis:
 - aid: arist:identity
@@ -49,6 +60,10 @@ apis:
   humanURL: https://help.arist.co/article/1027-arist-application-sso-single-sign-on-integration-guide
   baseURL: https://auth.arist.app
   tags:
+  - Authentication
+  - OpenID Connect
+  - Single Sign-On
+  tags_raw:
   - Authentication
   - OpenID Connect
   - OAuth
@@ -76,6 +91,10 @@ apis:
   humanURL: https://help.arist.co/category/107-data-integrations-and-delivery-methods
   baseURL: https://api.arist.app
   tags:
+  - Learning
+  - Enablement
+  - Integration
+  tags_raw:
   - Learning
   - Enablement
   - Integrations

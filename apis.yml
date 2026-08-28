@@ -14,6 +14,17 @@ description: 'Arist is an AI-native enterprise enablement platform, founded in 2
   OpenAPI, SDK or developer portal is published. Identity is handled by an Auth0 tenant
   at auth.arist.app supporting SAML and OIDC single sign-on plus one-time email passcodes.'
 url: https://raw.githubusercontent.com/api-evangelist/arist/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://framerusercontent.com/images/MVcgY55O8cBGMijaJPKzShyOgk.png
 x-type: company
 x-source: harvest:secondary-market

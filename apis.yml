@@ -87,7 +87,7 @@ apis:
   tags:
   - Authentication
   - OpenID Connect
-  - Single Sign-On
+  - SSO
   tags_raw:
   - Authentication
   - OpenID Connect
